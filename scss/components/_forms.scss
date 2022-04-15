@@ -1,0 +1,38 @@
+input, textarea, select{
+	border: 1px solid #BDBCBC;
+	box-sizing: border-box;
+	border-radius: 50px;
+	padding: 15px 20px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 26px;
+	color: #656263;
+	width: 100%;
+	&:focus{
+		outline: 0;
+	}
+}
+form textarea {
+    border-radius: 8px;
+}
+
+select {
+    background-image: url(../images/caret-down.png);
+    background-repeat: no-repeat;
+    background-position: 97%;
+    background-size: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+div#nav-Account-Setting .form-group text {
+    margin-bottom: 10px;
+    display: block;
+}
+@media(max-width: 767px){
+	input {
+	    padding: 8px 20px;
+	}
+}

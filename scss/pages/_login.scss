@@ -1,0 +1,113 @@
+.login-content {
+    margin: 40px;
+    padding: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    .heading-text {
+        padding-bottom: 30px;
+        text {
+            a {
+                color: #42b749;
+            }
+        }
+        
+    }
+}
+.heading-text {
+    h3 {
+        margin-bottom: 4px;
+    }
+}
+.login-form {
+    form {
+        .form-group {
+            text {
+                a {
+                    display: inline-block;
+                }
+            }
+            margin-bottom: 10px;
+        }
+        label {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+            color: #231F20;
+            margin-bottom: 10px;
+        }
+        a.primary-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+    padding-top: 30px;
+}
+.social-btns {
+    .primary-btn.fb {
+        background: #1877F2;
+        display: block;
+    }
+    .primary-btn.google {
+        background: #EA4335;
+        display: block;
+    }
+    .primary-btn.apple {
+        background: #000000;
+        display: block;
+    }
+    a.primary-btn {
+        margin-bottom: 15px;
+        i {
+            padding-right: 10px;
+        }
+    }
+}
+.seprator-text {
+    background: #BDBCBC;
+    height: 1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    p {
+        text-align: center;
+        display: block;
+        margin-top: 0;
+        background: #fff;
+        padding: 0 20px;
+    }    
+}
+
+@media(max-width: 1199px){
+    .your-order-card{
+        margin-top: 30px;
+    }
+}
+@media(max-width: 991px){
+    .login-content{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media(max-width: 575px){
+    .login-content{
+        padding: 30px 15px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px){
+    .myaccount .category-tabs .col-lg-9, .myaccount .category-tabs .col-lg-3 {
+        flex: 0 0 100% !important;
+        max-width: 100%;
+    }
+}
+@media(min-width: 1200px){
+    .myaccount .category-tabs .col-lg-9 {
+        flex: 0 0 75% !important;
+    } 
+    .myaccount .category-tabs .col-lg-3{
+        flex: 0 0 25% !important;
+    }
+}

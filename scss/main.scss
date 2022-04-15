@@ -1,0 +1,33 @@
+//  import
+@import 'modules/variables';
+@import 'modules/typography';
+@import 'modules/mixins';
+
+
+/*partials*/
+@import 'partials/header';
+@import 'partials/footer';
+
+/*Components*/
+@import 'components/btns';
+@import 'components/hero-banner';
+@import 'components/inner-banner';
+@import 'components/category';
+@import 'components/tabs';
+@import 'components/order-card';
+@import 'components/forms';
+@import 'components/popup';
+@import 'components/badges';
+@import 'components/rating';
+@import 'components/sweetalerts';
+
+
+@import 'pages/home';
+@import 'pages/order-page';
+@import 'pages/partner-page';
+@import 'pages/rider-page';
+@import 'pages/about-page';
+@import 'pages/faq-page';
+@import 'pages/login';
+@import 'pages/thankyou';
+@import 'pages/multistepform-page';

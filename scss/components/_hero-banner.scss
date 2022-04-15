@@ -1,0 +1,62 @@
+.main-wrapper.landingpage {
+    padding-top: 90px;
+}
+.main-wrapper.inner--page {
+    padding-top: 69px;
+}
+.hero-banner.home {
+    .banner-content {
+        padding-top: 125px;
+    }
+}
+
+.hero-banner {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    @media(min-width: 768px){
+        height: 700px;
+    }
+    .banner-content {
+        text-align: center;
+        
+        form {
+            padding-top: 30px;
+        }
+    }
+}
+.search-inner {
+    display: inline-block;
+    position: relative;
+    min-width: 600px;
+    input {
+        background: #F4F4F4;
+        border: 1px solid #BDBCBC;
+        box-sizing: border-box;
+        border-radius: 50px;
+        padding: 17px 5px 17px 54px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        color: #656263;
+        width: 100%;
+        background-image: url(../images/map--icn.png);
+        background-repeat: no-repeat;
+        background-position: 24px;
+        float: left;
+    }
+    button {
+        border: 0;
+        float: left;
+        img {
+            position: absolute;
+            right: 5px;
+            background: none;
+            border: 0;
+            width: 52.67px !important;
+            height: 52.67px;
+            top: 4px;
+        }
+    }
+}

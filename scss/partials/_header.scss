@@ -1,0 +1,183 @@
+header {
+    padding-top: 20.5px;
+    padding-bottom: 20.5px;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    .apps-block {
+        padding-top: 8px;
+        a {
+            img {
+                margin-top: -4px;
+            }
+        }        
+    }
+}
+header.fixed-header {
+    background: #fff;
+    z-index: 9;
+}
+.primary-logo {
+    text-align: center;
+}
+.menu-block {
+    text-align: right;
+    nav {
+        >ul {
+            display: inline-block;
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+        ul {
+            li {
+                display: inline;
+                padding-left: 15px;
+                padding-right: 15px;
+                a {
+                    display: inline-block;
+                }
+            }
+            li.sign-in {
+                a {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                    color: #231F20;
+                }
+            }
+            li.dropdown {
+                ul {
+                    padding-bottom: 0;
+                    padding-top: 0;
+                    margin-top: 10px;
+                    li {
+                        width: 100%;
+                        display: block;
+                        border-bottom: 1px solid #ccc;
+                        padding: 10px;
+                        transition: all 0.3s;
+                        &:hover {
+                            background: #efefef;
+                        }                        
+                        a {
+                            display: block;
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+}
+.apps-block {
+    a {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #231F20;
+    }
+}
+header.inner-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #fff;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+    .primary-logo {
+        img {
+            width: 127px;
+            height: 39px;
+        }
+    }
+    .menu-block {
+        nav {
+            ul {
+                li {
+                    a.primary-btn {
+                        padding: 10px 30px;
+                    }
+                }
+            }
+        }
+    }    
+    .apps-block {
+        padding-top: 8px;
+        a {
+            img {
+                margin-top: -4px;
+            }
+        }        
+    }
+}
+
+@media(max-width: 991px){
+    .menu-block {
+        nav {
+            ul {
+                li {
+                    padding-left: 24px;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+   
+}
+
+@media(max-width: 767px){
+    .search-inner {
+        min-width: 100% !important;
+    }
+    .menu-block {
+        nav {
+            ul {
+                li {
+                    padding-left: 7px;
+                    padding-right: 0;
+                    a.primary-btn {
+                        padding: 10px 15px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 575px){
+    .apps-block {
+        text-align: center;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    .menu-block {
+        text-align: right;
+        padding-top: 0px;
+        nav {
+            ul {
+                li {
+                    a.primary-btn {
+                        padding: 5px 15px !important;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }        
+    }
+    header {
+        padding-top: 10.5px;
+        padding-bottom: 10.5px;
+    }
+    .primary-logo {
+        text-align: left;
+    }
+    header.inner-header {
+        padding-top: 0;
+        padding-bottom: 4px;
+        .primary-logo {
+            img {
+                margin-top: -3px;
+            }
+        }
+    }    
+}

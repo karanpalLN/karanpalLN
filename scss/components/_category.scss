@@ -1,0 +1,122 @@
+.category-item {
+    float: left;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    .left {
+        width: 120px;
+        float: left;
+    }
+    .right {
+        width: calc(100% - 120px);
+        float: left;
+        padding-left: 20px;
+        position: relative;
+        h4 {
+            margin-bottom: 8px;
+            a {
+                color: #231F20;
+            }
+        }
+        p {
+            margin-bottom: 8.5px;
+        }
+    }
+    .apps-block a.primary-btn {
+        padding: 6px 14px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+        display: inline-block;
+    }
+}
+.category-sec {
+    padding: 50px 0 20px 0;
+    .category-item{
+        border: 1px solid #BDBCBC;
+        border-radius: 8px;
+        padding-right: 15px;
+        .left{ 
+            img {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+        }        
+    }
+}
+
+.inner-banner {
+    .category-content {
+        align-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 32px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.category-content {
+    h2 {
+        color: #fff;
+    }
+    span {
+        color: #fff;
+    }
+}
+
+@media(max-width: 991px) and (min-width: 768px){
+    .category-sec .category-item .right p {
+        margin-bottom: 5px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width: 767px){
+    .category-sec .category-item{
+        width: 100%;
+    }
+    .category-item .left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        padding-top: 15px;
+    }
+    .category-item .right {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}
+@media(max-width: 575px){
+    .category-listing {
+        .col-lg-6 {
+            &:last-child {
+                .category-item {
+                    .apps-block {
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+    .category-tabs {
+        .category-item {
+            width: 100%;
+        }
+    }
+    .inner-banner {
+        .category-content {
+            padding-top: 105px;
+            .col-12.text-right {
+                text-align: left !important;
+            }
+            .col-lg-6.text-right {
+                text-align: left !important;
+            }
+        }
+    }
+    .category-item{
+        display: block;
+    }
+    
+}

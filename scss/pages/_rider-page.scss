@@ -1,0 +1,22 @@
+.partner-banner-content.rider-content {
+    padding-top:183px;
+}
+.inner-banner.form-page	{
+    height: auto;
+}
+
+
+@media(max-width: 1199px){
+	.benfit-figure img{
+		height: auto;
+	}
+}
+@media(max-width: 991px){
+	.rider-page {
+		.benefit-sec.lgreen-sec {
+			.row {
+				flex-direction: column;
+			}
+		}
+	}
+}

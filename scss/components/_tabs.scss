@@ -1,0 +1,270 @@
+.nav-tabs {
+    margin-bottom: 30px;
+    a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #656263;
+        &:hover {
+            border: 0;
+            border-bottom: 4px solid #231F20 !important;
+        }
+    }    
+    a.active {
+        border: 0;
+        border-bottom: 4px solid #231F20 !important;
+    }
+}
+.category-tabs {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    .nav-tabs {
+        a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #656263;
+            transition: all 0.1s;
+            border: 0;
+        }
+    }    
+    h3 {
+        margin-bottom: 20px;
+    }
+    .category-item {
+        border: 1px solid #BDBCBC;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        .right {
+            p {
+                margin-bottom: 8.5px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+    .card-body{
+        padding-top: 0;
+    }
+}
+
+.myaccount {
+    .category-tabs {
+        ul#tabs {
+            display: inline-block;
+            width: 200px;
+            float: left;
+            border:0;
+            li.nav-item {
+                margin-bottom: 15px;
+                a{
+                    text-align: left;
+                    border-left: 4px solid transparent;
+                    transition: all 0.3s;
+                    border-radius: 0;
+                    padding-right: 7px;
+                    &.active {
+                        background: transparent;
+                        border-bottom: 0 solid #231F20 !important;
+                        border-left: 4px solid #42b749;
+                    }
+                    &:hover {
+                        border-bottom: 0 !important;
+                        border-left: 4px solid #42b749;
+                        color: #42b749;
+                    }
+                    i {
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        div#content.tab-content {
+            float: left;
+            display: inline-block;
+            width: calc(100% - 200px);
+            .card-body {
+                padding: 15px;
+                @media(min-width: 768px){
+                    .category-listing {
+                        .col-lg-6 {
+                            &:last-child {
+                                .category-item {
+                                    margin-bottom: 0;
+                                }
+                            }
+                            &:nth-last-child(2) {
+                                .category-item {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                        .col-lg-12 {
+                            &:last-child {
+                                .category-item {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1199px){
+    .category-tabs {
+        .nav-tabs {
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+    .category-item {
+        .right {
+            h4 {
+                a {
+                    font-size: 15px;
+                    line-height: 18px;
+                    display: inline-block;
+                }
+            }
+            padding-right: 15px;
+        }
+    }
+}
+
+@media(max-width: 991px){
+    .form-page{ 
+        .partner-banner-content {
+            padding-top: 50px !important;
+        }
+    }
+}
+
+@media(max-width: 575px){
+    .category-tabs {
+        .category-item {
+            .left {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+.nav-tabs {
+    display:none;
+}
+
+@media(min-width:768px) {
+    .nav-tabs {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card {
+        border: none;
+        .card-header {
+            display: none;
+        }
+        .collapse {
+            display: block;
+        }
+    }
+    .category-tabs {
+        .category-item {
+            .left {
+                img {
+                    border-bottom-left-radius: 8px;
+                    border-top-left-radius: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:767px){
+    .tab-content {
+        >.tab-pane {
+            display: block !important;
+            opacity: 1;
+        }
+    }
+    .category-tabs {
+        .category-listing {
+            padding-top: 20px;
+        }
+        .card-header {
+            h5 {
+                background-image: url(../images/caret-down.png);
+                background-repeat: no-repeat;
+                background-position: 100%;
+                background-size: 10px;
+                a {
+                    color: #231f20;
+                    display: block;
+                }                
+            }
+        }
+        .tab-content {
+            .card.tab-pane {
+                margin-bottom: 15px !important;
+            }
+        }
+    }
+    .payment-info {
+        .card-header {
+            h5 {
+                background-image: url(../images/caret-down.png);
+                background-repeat: no-repeat;
+                background-position: 100%;
+                background-size: 10px;
+            }
+        }
+    }
+    #collapse-Dashboard {
+        .apps-block {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+    div#collapse-Account-Setting {
+        form {
+            padding-top: 15px;
+        }
+    }
+    .myaccount {
+        .category-tabs {
+            ul#tabs {
+                width: 100%;
+                display: none;
+            }
+            div#content.tab-content {
+                width: 100%;
+            }
+        }
+    }
+    .review-order {
+        position: relative !important;
+        display: block !important;
+        right: 0 !important;
+        .review {
+            margin-right: 0 !important;
+        }
+    }
+    .category-tabs {
+        .category-item {
+            .left {
+                img {
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}

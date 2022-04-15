@@ -1,0 +1,54 @@
+.container{
+	max-width: 1280px;
+}
+
+input:focus, select:focus, button:focus{
+	outline: 0;
+}
+.sec-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.sec-heading h2 {
+    color: #42B749;
+}
+.form-group text{
+	margin-bottom: 10px;
+	display: block;
+}
+text{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 30px;
+	color: #231F20;
+}
+.border-bottom{
+	border-bottom: 1px solid #BDBCBC;
+}
+
+.pt-100{
+	padding-top: 100px;
+}
+.pb-30{
+	padding-bottom: 30px;
+}
+.pt-183{
+	padding-top: 183px;
+}
+a{
+	text-decoration: none !important;
+}
+.main-wrapper {
+    min-height: calc(100vh - 349px);
+}
+.colorgreen{
+	color: #42B749;
+}
+@media(max-width: 1199px){
+	br {
+	    display: none;
+	}
+}
+
+

@@ -1,0 +1,106 @@
+footer {
+    background: #231F20;
+    padding-bottom: 60px;
+}
+.footer-logo {
+    width: 50%;
+    float: left;
+    padding: 20px 0 30px 0;
+}
+.footer-apps-btn {
+    float: right;
+    width: 50%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        float: left;
+        display: inline-block;
+        padding-right: 10px;
+    }
+    .apps-btns {
+        float: left;
+        img {
+            &:last-child {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.footer-menus {
+    h5 {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            margin-bottom: 10px;
+            list-style-type: none;
+            a {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 26px;
+                color: #FFFFFF;
+                i {
+                    width: 30px;
+                    height: 30px;
+                    background: #fff;
+                    color: #231F20;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+.footer-logo-block {
+    border-bottom: 1px solid #656263;
+    margin-bottom: 30px;
+}
+
+
+@media(max-width: 1023px){
+    .footer-apps-btn{
+        width: 75%;
+    }
+    .footer-logo{
+        width: 25%;
+    }
+}
+
+@media(max-width: 991px){
+    .let-together {
+        .let-together-list {
+            .item {
+                h3 {
+                    font-size: 24px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 767px){
+    footer{
+        padding-bottom: 0px;
+    }
+    .footer-menus {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,69 @@
+.inner-banner {
+    height: auto;
+    margin-top: 0px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    .col-12 {
+    	position: relative;
+    }
+    .banner-content {
+    	width: 100%;
+    	text-align: center;    	
+	    height: 100%;
+	    display: flex;
+	    align-content: center;
+	    flex-wrap: wrap;
+	    justify-content: flex-start;
+	    padding-left: 15px;
+	    padding-right: 15px;	    
+	    h2{
+	    	width: 100%;
+	    	text-align: left;
+	    	margin-bottom: 20px;
+	    }
+	    form{
+	    	padding-top: 0;
+	    }
+    }
+}
+
+
+header{ 
+    .container {
+        max-width: 1440px;
+    }
+}
+.restaurant-page {
+    align-items: flex-end;
+}
+
+@media(max-width: 767px){    
+    .inner-banner {
+        .banner-content {
+            position: relative;
+            h2 {
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .hero-banner {
+        .banner-content {
+            form {
+                width: 100%;
+            }
+        }
+    }
+}
+@media(max-width: 575px){
+    .hero-banner.inner-banner {
+        height: 350px;
+    }
+    .landingpage {
+        .hero-banner.home {
+            min-height: 400px;
+        }
+    }
+}
